@@ -2,11 +2,11 @@
 
 ## Sobre o projeto
 
-Sistema desenvolvido para gerenciar uma horta escolar ou comunitária, permitindo organizar canteiros, culturas, plantios, voluntários, tarefas e colheitas.
+Sistema desenvolvido para gerenciar uma horta escolar, permitindo organizar canteiros, culturas, plantios, voluntários, tarefas e colheitas.
 
 ##  Tema sorteado
 
-**Tema 4 — Horta Escolar**
+**Tema 4 - Horta Escolar**
 
 ##  Integrantes e divisão das responsabilidades
 
@@ -57,4 +57,4 @@ Desenvolver um sistema de gerenciamento de horta escolar, aplicando conhecimento
 
 ---
 
-**Projeto acadêmico — Horta Escolar 🌱**
+**Projeto acadêmico — Horta Escolar **
