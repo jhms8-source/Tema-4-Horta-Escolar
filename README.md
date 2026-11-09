@@ -4,11 +4,11 @@ Sistema de gerenciamento de uma horta escolar ou comunitária, desenvolvido como
 
 ## Integrantes
 
-| Nome | Responsabilidade |
+| Nome | Responsabilidade | E- mail |
 |---|---|
-| Guilherme William | Modelo Conceitual |
-| João Henrique | Projeto Lógico |
-| Hiago Correia | Diagrama de Classes |
+| Guilherme William dos Santos Silva | Modelo Conceitual | gwss2@aluno.ifal.edu.br |
+| João Henrique Menezes da Silva | Projeto Lógico | jhms8@aluno.ifal.edu.br |
+| Hiago Correia de souza | Diagrama de Classes | hcs6@aluno.ifal.edu.br |
 
 ## Tema do projeto
 
