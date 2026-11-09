@@ -55,6 +55,5 @@ Tecnologias e ferramentas
 
 Desenvolver um sistema de gerenciamento de horta escolar, aplicando conhecimentos de Banco de Dados, modelagem conceitual, projeto lógico e diagramas de classes.
 
----
 
-**Projeto acadêmico — Horta Escolar **
+*Projeto acadêmico — Horta Escolar *
