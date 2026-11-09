@@ -1,59 +1,67 @@
 #  Horta Escolar
 
-## Sobre o projeto
+Sistema de gerenciamento de uma horta escolar ou comunitária, desenvolvido como projeto acadêmico para as disciplinas de **Banco de Dados, Programação Orientada a Objetos e Desenvolvimento Web**.
 
-Sistema desenvolvido para gerenciar uma horta escolar, permitindo organizar canteiros, culturas, plantios, voluntários, tarefas e colheitas.
+## Integrantes
 
-##  Tema sorteado
+| Nome | Responsabilidade |
+|---|---|
+| Guilherme William | Modelo Conceitual |
+| João Henrique | Projeto Lógico |
+| Hiago Correia | Diagrama de Classes |
 
-**Tema 4 - Horta Escolar**
+## Tema do projeto
 
-##  Integrantes e divisão das responsabilidades
+**Tema 4 — Horta Escolar**
 
-###  Guilherme William
-**Responsável pelo Modelo Conceitual**
+O sistema tem como objetivo organizar e controlar:
+
+- Canteiros;
+- Culturas (espécies cultivadas);
+- Plantios;
+- Voluntários;
+- Tarefas de manutenção;
+- Escalas de atividades;
+- Colheitas;
+- Usuários.
+
+## Divisão das responsabilidades
+
+### Pessoa 1 — Guilherme William
+**Modelo Conceitual**
 - Identificação das entidades.
 - Definição dos atributos.
 - Identificação dos relacionamentos.
 - Definição das cardinalidades.
 - Elaboração do Modelo Entidade-Relacionamento (MER).
 
-### João Henrique
-**Responsável pelo Projeto Lógico**
+### Pessoa 2 — João Henrique
+**Projeto Lógico**
 - Transformação do modelo conceitual em modelo lógico.
-- Definição das tabelas.
+- Criação das tabelas.
 - Definição das chaves primárias (PK).
 - Definição das chaves estrangeiras (FK).
 - Organização dos relacionamentos entre as tabelas.
 
-###  Hiago Correia
-**Responsável pelo Diagrama de Classes**
+### Pessoa 3 — Hiago Correia
+**Diagrama de Classes**
 - Identificação das classes.
-- Definição dos atributos das classes.
+- Definição dos atributos.
 - Organização dos relacionamentos.
 - Definição das associações entre as classes.
 - Elaboração do diagrama de classes.
 
-## Entidades do sistema
+## Ferramentas e tecnologias
 
-- Usuário
-- Canteiro
-- Cultura
-- Plantio
-- Voluntário
-- Tarefa
-- Escala
-- Colheita
+- **SQL:** linguagem utilizada para criação e manipulação do banco de dados.
+- **GitHub:** plataforma utilizada para armazenar e compartilhar o projeto.
+- **UML:** utilizada para representar o diagrama de classes.
+- **Markdown:** utilizado para documentação do projeto.
 
-Tecnologias e ferramentas
+## Professores responsáveis
 
-- SQL
-- Banco de Dados Relacional
-- Modelagem de Dados
-- Diagrama Entidade-Relacionamento
-- UML (Diagrama de Classes)
+- A definir.
 
-Desenvolver um sistema de gerenciamento de horta escolar, aplicando conhecimentos de Banco de Dados, modelagem conceitual, projeto lógico e diagramas de classes.
+---
 
-
-Projeto acadêmico — Horta Escolar
+Projeto Integrador — Horta Escolar 
