@@ -43,7 +43,7 @@ O sistema tem como objetivo organizar e controlar:
 - Definição das chaves estrangeiras (FK).
 - Organização dos relacionamentos entre as tabelas.
 
-### Pessoa 3 — Hiago Correia
+### Hiago Correia
 **Diagrama de Classes**
 - Identificação das classes.
 - Definição dos atributos.
