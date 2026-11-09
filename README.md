@@ -1,14 +1,14 @@
-#  Horta Escolar
+# Horta Escolar
 
 Sistema de gerenciamento de uma horta escolar ou comunitária, desenvolvido como projeto acadêmico para as disciplinas de **Banco de Dados, Programação Orientada a Objetos e Desenvolvimento Web**.
 
 ## Integrantes
 
-| Nome | Responsabilidade | E- mail |
-|---|---|
-| Guilherme William dos Santos Silva | Modelo Conceitual | gwss2@aluno.ifal.edu.br |
-| João Henrique Menezes da Silva | Projeto Lógico | jhms8@aluno.ifal.edu.br |
-| Hiago Correia de souza | Diagrama de Classes | hcs6@aluno.ifal.edu.br |
+| Nome | E-mail | Responsabilidade |
+|---|---|---|
+| Guilherme William | gwss2@aluno.ifal.edu.br | Modelo Conceitual |
+| João Henrique | jhms8@aluno.ifal.edu.br | Projeto Lógico |
+| Hiago Correia | hcs6@aluno.ifal.edu.br | Diagrama de Classes |
 
 ## Tema do projeto
 
@@ -27,7 +27,7 @@ O sistema tem como objetivo organizar e controlar:
 
 ## Divisão das responsabilidades
 
-### Pessoa 1 — Guilherme William
+### Guilherme William
 **Modelo Conceitual**
 - Identificação das entidades.
 - Definição dos atributos.
@@ -35,7 +35,7 @@ O sistema tem como objetivo organizar e controlar:
 - Definição das cardinalidades.
 - Elaboração do Modelo Entidade-Relacionamento (MER).
 
-### Pessoa 2 — João Henrique
+### João Henrique
 **Projeto Lógico**
 - Transformação do modelo conceitual em modelo lógico.
 - Criação das tabelas.
@@ -58,10 +58,5 @@ O sistema tem como objetivo organizar e controlar:
 - **UML:** utilizada para representar o diagrama de classes.
 - **Markdown:** utilizado para documentação do projeto.
 
-## Professores responsáveis
 
-- A definir.
-
----
-
-Projeto Integrador — Horta Escolar 
+Projeto Integrador — Horta Escolar
