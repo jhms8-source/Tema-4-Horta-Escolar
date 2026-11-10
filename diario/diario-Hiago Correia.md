@@ -1,19 +1,12 @@
-# Diário de Bordo – [Nome do Projeto]
+# Diário de Bordo – [Horta Escolar]
 
-**Data:** 27/11/2026  
-**Responsável:** [Seu nome]  
-**Objetivo da atividade:** [breve descrição]  
+**Data:** 10/11/2026  
+**Responsável:** [Hiago Correia de Souza]  
 
 ## Atividades realizadas
-- [ ] Tarefa 1: descrição  
-- [ ] Tarefa 2: descrição  
+criação do diagrama de classe com base no modelo logico
 
-## Observações
-- Dificuldade encontrada: ...  
-- Solução adotada: ...  
+## ferramentas utilizadas
+usei a ferramenta mermaid para a criação do diagrama de classe
+usei a ferramenta de IA (gemini), para tirar duvidas de sintaxe: INT, FLOAT, STRING, Encapsulamento "+", "-", cardinalidades e entidades associativas.
 
-## Próximos passos
-- [ ] Atividade pendente 1  
-- [ ] Atividade pendente 2  
-
-**Reflexões:** [opcional]
