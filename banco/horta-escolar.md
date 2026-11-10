@@ -1,3 +1,13 @@
+
+# Diagrama de Classes - Horta Escolar
+
+## Histórico de Versões
+| Versão | Data | Descrição | Autor |
+| :---: | :---: | :--- | :--- |
+| **v1.0** | 10/11/2026 | Modelo conceitual de classes derivado do BD relacional[cite: 1, 4]. | Hiago Correia de Souza |
+
+## Diagrama de Classes
+
 ```mermaid
 classDiagram
     class Usuario {
