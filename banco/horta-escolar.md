@@ -4,8 +4,8 @@
 ## Histórico de Versões
 | Versão | Data | Descrição | Autor |
 | :---: | :---: | :--- | :--- |
-| **v1.0** | 09/11/2026 | Modelo conceitual de classes derivado do BD relacional[cite: 1, 4]. | Hiago Correia de Souza |
-| **v2.0** | 10/11/2026 | adição do método cadastrar () na classe usuario | | Hiago Correia de Souza |
+| **v1.0** | 09/11/2026 | Modelo conceitual de classes derivado do BD relacional| Hiago Correia de Souza |
+| **v2.0** | 10/11/2026 | adição do método cadastrar () na classe usuário | Hiago Correia de Souza |
 ## Diagrama de Classes
 
 ```mermaid
@@ -15,6 +15,7 @@ classDiagram
         +string nome
         +string email
         +string senha
+        +cadastrar () boolean 
     }
 
     class Canteiro {
