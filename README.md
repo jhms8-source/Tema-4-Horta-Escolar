@@ -60,3 +60,9 @@ O sistema tem como objetivo organizar e controlar:
 
 
 Projeto Integrador — Horta Escolar
+
+## Alterações 
+um canteiro recebe um plantio, no caso 1,1 .
+escala é um relacionamento, entre tarefa e voluntario.
+
+
