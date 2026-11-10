@@ -5,5 +5,5 @@
  
 ## Atividades realizadas
 -  Criação do Modelo Conceitual
--  Usei a IA(Gemini) para me auxiliar no significado das sintaxe: Cardionalidades
+-  Usei a IA(Gemini) para me auxiliar no significado das sintaxe: Cardinalidades
 -  Utilizei o BRmodelo para criação do Modelo Conceitual
