@@ -61,8 +61,18 @@ O sistema tem como objetivo organizar e controlar:
 
 Projeto Integrador — Horta Escolar
 
-## Alterações 
+
+## Alterações Banco
 um canteiro recebe um plantio, no caso 1,1 .
 escala é um relacionamento, entre tarefa e voluntario.
+
+## Alterações Pweb2
+
+ tela login: opcao esqueceu senha, cadastra usuario
+
+ criar o banco de registro 
+ tela adm: adicionar a escala, alterar os botao verde e vermelho
+ tela voluntario: adicionar a tela de consultar tarefas feitas, 
+
 
 
