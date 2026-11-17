@@ -5,111 +5,106 @@
 | Versão | Data | Descrição | Autor |
 | :---: | :---: | :--- | :--- |
 | **v1.0** | 09/11/2026 | Modelo conceitual de classes derivado do BD relacional| Hiago Correia de Souza |
+| **v2.0** | 17/11/2026 |diagrama atualizado para POO, com novos comportamentos e dadods| Hiago Correia de Souza |
 ## Diagrama de Classes
 
 ```mermaid
 classDiagram
     class Usuario {
-        +int id_usuario PK
-        +string nome
-        +string email
-        +string senha
+        - int id
+        - String nome
+        - String email
+        - String senha
+        - List~Canteiro~ canteiros
+        - List~Plantio~ plantios
+        + gerenciarCanteiro()
+        + registrarPlantio()
     }
 
     class Canteiro {
-        +int id_canteiro PK
-        +string identificacao
-        +string localizacao
-        +float area
-        +string status
-        +int id_usuario FK
+        - int id
+        - String identificacao
+        - String localizacao
+        - float area
+        - String status
+        - Usuario responsavel
+        - List~Plantio~ plantios
+        - List~Colheita~ colheitas
     }
 
     class Cultura {
-        +int id_cultura PK
-        +string nome
+        - int id
+        - String nome
     }
 
     class Plantio {
-        +int id_plantio PK
-        +date data_plantio
-        +date data_prevista
-        +float quantidade
-        +string unidade
-        +string status
-        +int id_cultura FK
-        +int idCanteiro FK
-        +int id_usuario FK
-    }
-
-    class PlantioCultura {
-        +int id_plantio PK, FK
-        +int id_cultura PK, FK
+        - int id
+        - LocalDate dataPlantio
+        - LocalDate dataPrevista
+        - float quantidade
+        - String unidade
+        - String status
+        - List~Cultura~ culturas
+        - Canteiro canteiro
+        - Usuario usuario
+        - List~Tarefa~ tarefas
+        - List~Colheita~ colheitas
     }
 
     class Colheita {
-        +int id_colheita PK
-        +date data_colheita
-        +float quantidade_kg
-        +boolean colheita_final
-        +string destino
-        +int idCanteiro FK
-        +int id_tarefa FK
-        +int idcolheita FK
-    }
-
-    class PlantioColheita {
-        +int id_plantio PK, FK
-        +int id_colheita PK, FK
+        - int id
+        - LocalDate dataColheita
+        - float quantidadeKg
+        - boolean colheitaFinal
+        - String destino
+        - Canteiro canteiro
+        - Tarefa tarefa
+        - List~Plantio~ plantios
     }
 
     class Tarefa {
-        +int id_tarefa PK
-        +string tipo
-        +time hora_inicio
-        +time hora_fim
-        +string descricao
-        +string status
-        +date fecha_data
-        +int id_voluntario FK
-    }
-
-    class PlantioTarefa {
-        +int id_plantio PK, FK
-        +int id_tarefa PK, FK
+        - int id
+        - String tipo
+        - LocalTime horaInicio
+        - LocalTime horaFim
+        - String descricao
+        - String status
+        - LocalDate fechaData
+        - Voluntario voluntario
+        - List~Plantio~ plantios
     }
 
     class Voluntario {
-        +int id_voluntario PK
-        +string nome
-        +string telefone
+        - int id
+        - String nome
+        - String telefone
+        - List~Tarefa~ tarefas
     }
 
     class Escala {
-        +int id_escala PK
-        +int id_voluntario FK
-        +int id_tarefa FK
+        - int id
+        - Voluntario voluntario
+        - Tarefa tarefa
     }
 
-    %% Ligacoes com Cardinalidades da Imagem Original
-    Usuario "1" -- "0..*" Canteiro : gerencia / cadastra
-    Usuario "1" -- "0..*" Plantio : registra
-    Canteiro "1" -- "0..*" Plantio : contem
-    Cultura "1" -- "0..*" Plantio : baseia
+    %% Associações Diretas (POO)
+    Usuario "1" --> "*" Canteiro : canteiros
+    Usuario "1" --> "*" Plantio : plantios
+    Canteiro "1" --> "*" Plantio : plantios
+    Canteiro "1" --> "*" Colheita : colheitas
+    Canteiro "*" --> "1" Usuario : responsavel
+    
+    Plantio "*" --> "1" Canteiro : canteiro
+    Plantio "*" --> "1" Usuario : usuario
+    Plantio "*" --> "*" Cultura : culturas
+    Plantio "*" --> "*" Tarefa : tarefas
+    Plantio "*" --> "*" Colheita : colheitas
 
-    Plantio "1" -- "0..*" PlantioCultura : possui
-    Cultura "1" -- "0..*" PlantioCultura : associada
+    Colheita "*" --> "1" Canteiro : canteiro
+    Colheita "*" --> "1" Tarefa : tarefa
 
-    Plantio "0..*" -- "0..*" PlantioColheita : gera
-    Colheita "1" -- "0..*" PlantioColheita : pertence
-
-    Canteiro "1" -- "0..*" Colheita : realiza
-    Tarefa "1" -- "0..*" Colheita : gera
-
-    Plantio "0..*" -- "0..*" PlantioTarefa : requer
-    Tarefa "1" -- "0..*" PlantioTarefa : executa
-
-    Voluntario "1" -- "0..*" Tarefa : realiza
-    Voluntario "1" -- "0..*" Escala : participa
-    Tarefa "1" -- "0..*" Escala : agendada
+    Voluntario "1" --> "*" Tarefa : tarefasAtribuidas
+    Tarefa "*" --> "1" Voluntario : voluntario
+    Escala "*" --> "1" Voluntario : voluntario
+    Escala "*" --> "1" Tarefa : tarefa
 ```
