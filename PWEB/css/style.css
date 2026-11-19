@@ -1,0 +1,78 @@
+/* Tokens visuais e estilos base do sistema HortaViva */
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #27500A;
+  background-color: #EAF3DE;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hv-card {
+  background-color: #FFFFFF;
+  border: 1px solid #C7DDA8;
+  border-radius: 20px;
+}
+
+.hv-input {
+  background-color: #FFFFFF;
+  border: 1px solid #C7DDA8;
+  border-radius: 12px;
+  color: #27500A;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.hv-input:focus {
+  outline: none;
+  border-color: #3B6D11;
+  box-shadow: 0 0 0 3px rgba(59, 109, 17, 0.15);
+}
+
+.hv-input::placeholder {
+  color: #8CA373;
+}
+
+.hv-input-error {
+  border-color: #DC2626 !important;
+  background-color: #FEF2F2 !important;
+}
+
+.hv-btn {
+  border-radius: 12px;
+  transition: all 0.15s ease;
+}
+
+.hv-checkbox,
+.hv-radio {
+  accent-color: #3B6D11;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+
+/* Barra de rolagem personalizada */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #EAF3DE;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B8D688;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3B6D11;
+}
+
+/* Foco visível para quem navega pelo teclado (acessibilidade) */
+button:focus-visible,
+a:focus-visible,
+select:focus-visible,
+input[type="checkbox"]:focus-visible,
+input[type="radio"]:focus-visible {
+  outline: 2px solid #3B6D11;
+  outline-offset: 2px;
+}
